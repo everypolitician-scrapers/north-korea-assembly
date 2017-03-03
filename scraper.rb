@@ -38,4 +38,5 @@ def scrape_list(url)
   end
 end
 
+ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
 scrape_list('http://www.dailynk.com/korean/read.php?num=102886&cataId=nk00100')
